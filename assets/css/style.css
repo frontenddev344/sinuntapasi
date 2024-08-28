@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+    font-size: 16px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+a {
+    text-decoration: none
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1350px;
+    padding: 0 5%;
+
+}
+
+.ptb-70 {
+    padding: 70px 0
+}
+
+.ptb-50 {
+    padding: 50px 0
+}
+
+.pt-50 {
+    padding-top: 50px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
+}
+
+.ptb-30 {
+    padding: 30px 0
+}
+
+/* header section css start */
+.site-header{
+    background-color: #0dcaf0;
+    padding: 15px 0;
+}
+.site-logo img {
+    max-width: 250px;
+}
+.main-nav ul li a {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+}
+.main-nav ul {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-nav {
+    position: fixed;
+    background: #000;
+    width: 30%;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    padding: 50px;
+    transform: translateX(100%);
+    transition: all 0.4s linear;
+    z-index: 9;
+}
+.menuToggle .main-nav{
+    transform: translateX(0%);
+}
+.close {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+.toggle {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+/* header section css end */
+
+/* banner section css start */
+.site-banner{
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+}
+.site-banner::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.banner-wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.banner-text h1 {
+    font-size: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+}
+.top-text p {
+    font-size: 18px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* banner section css end */
+
+/* link card section css start */
+.link-box{
+    background-image: url(../images/hero-banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    border-radius:  20px;
+    /* width: 33%; */
+overflow: hidden;
+}
+.link-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.3;
+}
+.link-box h3{
+    position: relative;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    text-align: center;
+}
+.link-box a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.slick-slide {
+    margin: 0 10px;
+}
+.slick-dots li button:before {
+    font-size: 16px;
+    color: #0dcaf0;
+}
+.slick-dots li.slick-active button:before {
+    color: #0dcaf0;
+}
+/* link card section css end */
+
+/* top picks section css start */
+.site-heading h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    color: #000;
+}
+.site-heading {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+.pick-img {
+    height: 350px;
+}
+.pick-wrap{
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.pick-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.pick-text h4 {
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.pick-text h4 a{
+    color: #fff;
+}
+.pick-text p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+}
+.pick-text {
+    padding: 15px 0;
+    background-color: #0dcaf0;
+}
+/* top picks section css end */
+
+/* why choose section css start */
+
+.choose-icn {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    padding: 18px;
+    margin: 0 auto;
+}
+.choose-icn img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.choose-wrap {
+    padding: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+    background-color: #fff;
+    text-align: center;
+    height: 100%;
+}
+.choose-text h4 {
+    font-size: 25px;
+    color: #0dcaf0;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.choose-text p {
+    font-size: 18px;
+    color: #000;
+}
+.why-choose .col-md-6 {
+    margin: 12px 0;
+}
+/* why choose section css end */
