@@ -79,7 +79,7 @@ nav {
 }
 .main-nav {
     position: fixed;
-    background: #000;
+    background-color: #000;
     width: 30%;
     right: 0;
     top: 0;
@@ -88,7 +88,15 @@ nav {
     transform: translateX(100%);
     transition: all 0.4s linear;
     z-index: 9;
+
 }
+/* .link-sec{
+    background-image: url(../images/back-groun-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+} */
 .menuToggle .main-nav{
     transform: translateX(0%);
 }
@@ -113,7 +121,7 @@ nav {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 85vh;
+    height: 80vh;
     position: relative;
 }
 .site-banner::before{
@@ -146,6 +154,13 @@ nav {
     color: #000;
     text-align: center;
     margin-bottom: 10px;
+}
+.top-text h3 {
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 600;
 }
 /* banner section css end */
 
@@ -197,6 +212,9 @@ overflow: hidden;
 .slick-dots li.slick-active button:before {
     color: #0dcaf0;
 }
+.slick-dots {
+    bottom: -40px;
+}
 /* link card section css end */
 
 /* top picks section css start */
@@ -247,7 +265,16 @@ overflow: hidden;
 /* top picks section css end */
 
 /* why choose section css start */
-
+.why-choose{
+    background-image: url(../images/back-groun-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed ;
+}
+.why-choose .site-heading h2{
+    color: #fff;
+}
 .choose-icn {
     height: 85px;
     width: 85px;
@@ -284,3 +311,182 @@ overflow: hidden;
     margin: 12px 0;
 }
 /* why choose section css end */
+
+/* news letter section css start */
+.newsletter-heading {
+    max-width: 80%;
+    margin: 0 auto;
+}
+.newsletter-heading h3 {
+    font-size: 28px;
+    text-align: center;
+    padding: 0 20px;
+    color: #000;
+    font-weight: 600;
+}
+.newsletter-wrap {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25px;
+    border: 2px solid #0dcaf0;
+    border-radius: 10px;
+}
+.news-form input {
+    width: 79%;
+    height: 45px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #0dcaf0;
+    border-radius: 5px;
+}
+.news-form button {
+    height: 45px;
+    width: 19%;
+    background-color: #0dcaf0;
+    color: #fff;
+    border: 1px solid #0dcaf0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s linear;
+
+}
+.news-form button:hover{
+    background-color: transparent;
+    color: #0dcaf0;
+}
+.news-form {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.news-letter, .disclaimer-sec, .link-sec {
+    background-color: #f7f9ff;
+}
+
+/* newsletter section css end */
+
+/* faq section css start */
+
+
+.accordion-item {
+    margin: 10px 0;
+    border: 1px solid #0dcaf0;
+    border-radius: 10px !important;
+    overflow: hidden;
+}
+button.accordion-button, .accordion-button:not(.collapsed) {
+    border: none;
+    background-color: #0dcaf0;
+    color: #fff;
+    box-shadow: none;
+}
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    transition: all 0.5s;
+    filter: brightness(0) invert(1);
+  }
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    filter: brightness(0) invert(1);  
+}
+:focus-visible {
+    outline: auto 1px  #0dcaf0;
+}
+/* faq section  css end */
+
+/* Disclaimer setion css start */
+.disclaimer-text h4 {
+    font-size: 25px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.disclaimer-text p {
+    font-size: 14px;
+    color: #4c4c4c;
+}
+/* Disclaimer section css end */
+
+/* footer section css start */
+.site-footer{
+    background-color: #0dcaf0;
+}
+.footer-logo img {
+    max-width: 250px;
+}
+.footer-logo {
+    margin-bottom: 20px;
+}
+.social-links ul li a {
+    height: 35px;
+    width: 35px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: #0dcaf0;
+    border: 1px solid #fff;
+    transition: all 0.3s linear;
+}
+.social-links ul li a:hover, .social-links ul li:hover a{
+    color: #fff;
+    background-color: transparent;
+}
+.social-links ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.footer-heading h4 {
+    font-size: 1.875rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-links ul li a {
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+} 
+.footer-links ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.3s linear;
+
+}
+.footer-links ul li a:hover::before{
+    width: 100%;
+}
+.footer-links ul li{
+    padding: 5px 0;
+    
+}
+.copy-right p {
+    font-size: 0.9375rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0;
+}
+.copy-right {
+    padding-top: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e9e8e8;
+}
+
+/* footer section css end */
+.link-sec .container {
+    max-width: 1800px;
+}
