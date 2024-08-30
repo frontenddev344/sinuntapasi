@@ -56,7 +56,7 @@ img {
 
 /* header section css start */
 .site-header{
-    background-color: #0dcaf0;
+    background-color: #407d89;
     padding: 15px 0;
 }
 .site-logo img {
@@ -207,10 +207,10 @@ overflow: hidden;
 }
 .slick-dots li button:before {
     font-size: 16px;
-    color: #0dcaf0;
+    color: #407d89;
 }
 .slick-dots li.slick-active button:before {
-    color: #0dcaf0;
+    color: #407d89;
 }
 .slick-dots {
     bottom: -40px;
@@ -260,7 +260,7 @@ overflow: hidden;
 }
 .pick-text {
     padding: 15px 0;
-    background-color: #0dcaf0;
+    background-color: #407d89;
 }
 /* top picks section css end */
 
@@ -299,7 +299,7 @@ overflow: hidden;
 }
 .choose-text h4 {
     font-size: 25px;
-    color: #0dcaf0;
+    color: #407d89;
     font-weight: 600;
     margin: 15px 0;
 }
@@ -329,7 +329,7 @@ overflow: hidden;
     margin: 0 auto;
     text-align: center;
     padding: 25px;
-    border: 2px solid #0dcaf0;
+    border: 2px solid #407d89;
     border-radius: 10px;
 }
 .news-form input {
@@ -337,15 +337,15 @@ overflow: hidden;
     height: 45px;
     padding: 15px;
     background-color: #fff;
-    border: 1px solid #0dcaf0;
+    border: 1px solid #407d89;
     border-radius: 5px;
 }
 .news-form button {
     height: 45px;
     width: 19%;
-    background-color: #0dcaf0;
+    background-color: #407d89;
     color: #fff;
-    border: 1px solid #0dcaf0;
+    border: 1px solid #407d89;
     border-radius: 5px;
     font-size: 1rem;
     transition: all 0.3s linear;
@@ -353,7 +353,7 @@ overflow: hidden;
 }
 .news-form button:hover{
     background-color: transparent;
-    color: #0dcaf0;
+    color: #407d89;
 }
 .news-form {
     max-width: 80%;
@@ -374,13 +374,13 @@ overflow: hidden;
 
 .accordion-item {
     margin: 10px 0;
-    border: 1px solid #0dcaf0;
+    border: 1px solid #407d89;
     border-radius: 10px !important;
     overflow: hidden;
 }
 button.accordion-button, .accordion-button:not(.collapsed) {
     border: none;
-    background-color: #0dcaf0;
+    background-color: #407d89;
     color: #fff;
     box-shadow: none;
 }
@@ -394,7 +394,7 @@ button.accordion-button, .accordion-button:not(.collapsed) {
     filter: brightness(0) invert(1);  
 }
 :focus-visible {
-    outline: auto 1px  #0dcaf0;
+    outline: auto 1px  #407d89;
 }
 /* faq section  css end */
 
@@ -413,7 +413,7 @@ button.accordion-button, .accordion-button:not(.collapsed) {
 
 /* footer section css start */
 .site-footer{
-    background-color: #0dcaf0;
+    background-color: #407d89;
 }
 .footer-logo img {
     max-width: 250px;
@@ -429,7 +429,7 @@ button.accordion-button, .accordion-button:not(.collapsed) {
     align-items: center;
     justify-content: center;
     font-size: 1.25rem;
-    color: #0dcaf0;
+    color: #407d89;
     border: 1px solid #fff;
     transition: all 0.3s linear;
 }

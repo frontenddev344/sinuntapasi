@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom Select Dropdown</title>
+  <style>
+    /* Custom CSS for dropdown */
+    .custom-select {
+      position: relative;
+      display: inline-block;
+      width: 200px;
+    }
+
+    .custom-select select {
+      display: none; /* Hide the default select element */
+    }
+
+    .select-selected {
+      background-color: #f0f0f0;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      height: 40px;
+      padding: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .select-items {
+      position: absolute;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      z-index: 99;
+      display: none;
+      width: 100%;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .select-items div {
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    .select-items div:hover {
+      background-color: #f1f1f1;
+    }
+
+    .select-arrow-active .select-items {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="custom-select">
+  <div class="select-selected">Select an option</div>
+  <div class="select-items select-hide">
+    <div data-value="AK">Alaska</div>
+    <div data-value="HI">Hawaii</div>
+    <div data-value="CA">California</div>
+    <div data-value="NV">Nevada</div>
+    <div data-value="OR">Oregon</div>
+    <div data-value="WA">Washington</div>
+    <!-- Add more options here -->
+  </div>
+</div>
+
+<script>
+  // Custom JavaScript for dropdown functionality
+  document.addEventListener('DOMContentLoaded', function() {
+    var selected = document.querySelector('.select-selected');
+    var items = document.querySelector('.select-items');
+    var optionElements = items.querySelectorAll('div');
+
+    selected.addEventListener('click', function() {
+      items.classList.toggle('select-hide');
+      selected.classList.toggle('select-arrow-active');
+    });
+
+    optionElements.forEach(function(option) {
+      option.addEventListener('click', function() {
+        var value = this.getAttribute('data-value');
+        selected.textContent = this.textContent;
+        selected.setAttribute('data-value', value);
+        items.classList.add('select-hide');
+        selected.classList.remove('select-arrow-active');
+      });
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!event.target.matches('.select-selected')) {
+        var openItems = document.querySelector('.select-items');
+        if (openItems && !openItems.classList.contains('select-hide')) {
+          openItems.classList.add('select-hide');
+          selected.classList.remove('select-arrow-active');
+        }
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
