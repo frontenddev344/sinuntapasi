@@ -1,0 +1,139 @@
+@media(max-width:1200px){
+    html{
+        font-size: 15px;
+    }
+    .site-banner {
+        height: 70vh;
+    }
+    .main-nav {
+        width: 350px;
+    }
+    .sub-banner {
+        height: 450px;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media(max-width:992px){
+    .pick-wrap {
+        margin-bottom: 25px;
+    }
+    .top-pick .row {
+        justify-content: center;
+    }
+}
+
+@media(max-width:850px){
+    .site-banner {
+        height: 60vh;
+    }
+    .banner-text h1 {
+        font-size: 3rem;
+    }
+    .link-box {
+        height: 350px;
+    }
+    .pick-img {
+        height: 300px;
+    }
+    .choose-wrap {
+        padding: 15px;
+    }
+    .sub-banner {
+        height: 400px !important;
+    }
+}
+
+@media(max-width:767px){
+    .site-footer .col-lg-4.col-md-6 {
+        margin-bottom: 25px;
+    }
+    .footer-heading h4 {
+        margin-bottom: 10px;
+    }
+    html{
+        font-size: 14px;
+    }
+    .news-form {
+        max-width: 100%;
+    }
+    .luxury-wrap {
+        flex-direction: column;
+    }
+    .luxury-left {
+        width: 100%;
+    }
+    .luxury-img {
+        height: 300px;
+        margin-bottom: 15px;
+    }
+    .luxury-right {
+        width: 100%;
+    }
+}
+
+@media(max-width:575px){
+    .site-banner {
+        height: 55vh;
+    }
+    .banner-text h1 {
+        font-size: 2.8rem;
+    }
+    .ptb-50 {
+        padding: 30px 0;
+    }
+    .site-heading {
+        padding: 0 5px;
+        margin-bottom: 20px;
+    }
+    .pick-img {
+        height: 250px;
+    }
+    .link-box {
+        height: 300px;
+    }
+    .news-form {
+        flex-direction: column;
+    }
+    .news-form input {
+        width: 100%;
+    }
+    .news-form button {
+        width: 40%;
+        margin-top: 15px;
+    }
+    .newsletter-wrap {
+        padding: 15px 10px;
+    }
+    .newsletter-heading h3 {
+        padding: 0 0px;
+    }
+    .newsletter-heading {
+        max-width: 100%;
+    }
+    .site-logo img {
+        max-width: 200px;
+    }
+    .footer-logo img {
+        max-width: 220px;
+    }
+    .main-nav {
+        width: 100%;
+    }
+    .luxury-img {
+        height: 250px;
+    }
+    .luxury-wrap {
+        padding: 15px;
+    }
+    .sub-banner .banner-text h1 {
+        font-size: 2.1rem;
+        padding: 0 10px;
+        word-break: break-all;
+    }
+    .sub-banner {
+        height: 380px !important;
+    }
+}

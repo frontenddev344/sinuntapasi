@@ -1,0 +1,39 @@
+/* 05-09-24 css start */
+
+.leads-btn, .test-btn, .connect-btn, .disconnect-btn {
+    font-size: 14px;
+}
+
+table.business-list p {
+    font-size: 15px;
+}
+
+.countries_warp input#phone {
+    position: relative;
+    margin-left: 0 !important;
+    border-left: 0 !important;
+    box-shadow: none !important;
+    border-bottom-left-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+select#countryCode {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: none !important;
+}
+.email-box {
+    position: relative;
+}
+.email-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/mail-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 14px center;
+    padding-left: 35px;
+    z-index: 999;
+    height: 100%;
+}
+/* 05-09-24 css end */

@@ -7,3 +7,24 @@ $(document).ready(function(){
     });
 });
 
+// $('.moreless-button').click(function() {
+//     $('.moretext').slideToggle();
+//     if ($('.moreless-button').text() == "Read Less") {
+//       $(this).text("Read More")
+//     } else {
+//       $(this).text("Read Less")
+//     }
+//   });
+
+
+  $('.moreless-button').click(function() {
+    var $this = $(this);
+    var $moreText = $this.closest('.luxury-text').find('.moretext');
+  
+    $moreText.slideToggle();
+    if ($this.text() == "Read Less") {
+      $this.text("Read More");
+    } else {
+      $this.text("Read Less");
+    }
+  });

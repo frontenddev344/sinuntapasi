@@ -63,7 +63,7 @@ img {
     max-width: 250px;
 }
 .main-nav ul li a {
-    font-size: 16px;
+    font-size: 1rem;
     color: #fff;
     font-weight: 500;
 }
@@ -101,7 +101,7 @@ nav {
     transform: translateX(0%);
 }
 .close {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #fff;
     position: absolute;
     top: 20px;
@@ -109,7 +109,7 @@ nav {
     cursor: pointer;
 }
 .toggle {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #fff;
     cursor: pointer;
 }
@@ -143,20 +143,20 @@ nav {
     position: relative;
 }
 .banner-text h1 {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #fff;
     text-transform: uppercase;
     font-weight: 700;
     text-align: center;
 }
 .top-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000;
     text-align: center;
     margin-bottom: 10px;
 }
 .top-text h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     color: #000;
     text-align: center;
     margin-bottom: 10px;
@@ -188,7 +188,7 @@ overflow: hidden;
 .link-box h3{
     position: relative;
     color: #fff;
-    font-size: 25px;
+    font-size: 1.5625rem;
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -206,7 +206,7 @@ overflow: hidden;
     margin: 0 10px;
 }
 .slick-dots li button:before {
-    font-size: 16px;
+    font-size: 1rem;
     color: #407d89;
 }
 .slick-dots li.slick-active button:before {
@@ -219,7 +219,7 @@ overflow: hidden;
 
 /* top picks section css start */
 .site-heading h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
     font-weight: 600;
     color: #000;
@@ -244,7 +244,7 @@ overflow: hidden;
     object-fit: cover;
 }
 .pick-text h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     text-align: center;
     font-weight: 600;
     margin-bottom: 8px;
@@ -253,7 +253,7 @@ overflow: hidden;
     color: #fff;
 }
 .pick-text p {
-    font-size: 18px;
+    font-size: 1rem;
     text-align: center;
     margin-bottom: 0;
     color: #fff;
@@ -298,13 +298,13 @@ overflow: hidden;
     height: 100%;
 }
 .choose-text h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #407d89;
     font-weight: 600;
     margin: 15px 0;
 }
 .choose-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000;
 }
 .why-choose .col-md-6 {
@@ -318,7 +318,7 @@ overflow: hidden;
     margin: 0 auto;
 }
 .newsletter-heading h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     text-align: center;
     padding: 0 20px;
     color: #000;
@@ -333,7 +333,7 @@ overflow: hidden;
     border-radius: 10px;
 }
 .news-form input {
-    width: 79%;
+    width: 77%;
     height: 45px;
     padding: 15px;
     background-color: #fff;
@@ -342,7 +342,7 @@ overflow: hidden;
 }
 .news-form button {
     height: 45px;
-    width: 19%;
+    width: 22%;
     background-color: #407d89;
     color: #fff;
     border: 1px solid #407d89;
@@ -400,13 +400,13 @@ button.accordion-button, .accordion-button:not(.collapsed) {
 
 /* Disclaimer setion css start */
 .disclaimer-text h4 {
-    font-size: 25px;
+    font-size: 1.5625rem;
     color: #000;
     font-weight: 600;
     margin-bottom: 10px;
 }
 .disclaimer-text p {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #4c4c4c;
 }
 /* Disclaimer section css end */
@@ -490,3 +490,284 @@ button.accordion-button, .accordion-button:not(.collapsed) {
 .link-sec .container {
     max-width: 1800px;
 }
+
+/* luxury main section css start */
+.luxury-wrap {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    background-color: #fff;
+    border: 3px solid #407d89;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.luxury-left {
+    width: 35%;
+}
+.luxury-right {
+    width: 63%;
+}
+.luxury-img{
+    height: 100%;
+    overflow: hidden;
+}
+.luxury-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.luxury-text h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.luxury-text h3 a{
+    color: #407d89;
+}
+.location p {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 0;
+}
+.price p {
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 0;
+}
+.luxury-text ul {
+    margin: 10px 0;
+    padding-left: 20px;
+    list-style: disc;
+}
+.luxury-text ul li{
+    font-size: 1.0625rem;
+    color: #333;
+    font-weight: 500;
+}
+.luxury-text p {
+    font-size: 1rem;
+    color: #000;
+}
+p.moretext {
+    display: none;
+}
+.read-more-btn {
+    margin-top: 20px;
+}
+.read-more-btn a.moreless-button {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #000;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.read-more-btn a.moreless-button:hover{
+    color: #407d89;
+}
+.sub-banner{
+    height: 550px;
+}
+.sub-banner .banner-text h1 {
+    font-size: 2.5rem;
+}
+.luxury-text p a {
+    text-decoration: underline;
+    color: #407d89;
+}
+.casino-page p.moretext {
+    margin-top: 10px;
+}
+/* luxury main section css end */
+
+
+
+
+/* CSS */
+.button-82-pushable {
+  position: relative;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: inline-block;
+  width: fit-content;
+}
+
+.button-82-shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: hsl(0deg 0% 0% / 0.25);
+  will-change: transform;
+  transform: translateY(2px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.button-82-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(to left, hsl(189.86deg 38.18% 18.24%) 0%, hsl(189.86deg 39.51% 22.13%) 8%, hsl(189.86deg 35.59% 45.99%) 92%, hsl(189.86deg 35.28% 27.47%) 100%)
+}
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 10px 27px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  color: white;
+  background: hsl(189.86deg 36.32% 39.41%);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+    font-size: 1rem;
+
+}
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 1rem;
+    padding: 10px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
+/* 
+.privacy-wrap{
+    margin: 20px 0;
+}
+
+.privacy-wrap h3{
+font-size: 28px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.privacy-wrap h4{
+font-size: 22px;
+font-weight: 600;
+margin-bottom: 10px;
+}
+.privacy-wrap p{
+font-size: 16px;
+margin-bottom: 10px;
+}
+
+.privacy-wrap ul {
+padding-left: 20px;
+list-style: disc;
+margin: 10px 0;
+}
+
+.privacy-wrap ul li{
+font-size: 16px ;
+padding: 2px;
+}
+
+.privacy-wrap ul li a, .privacy-wrap p a{
+text-decoration: underline;
+font-weight: 500;
+}
+
+.privacy-wrap ol{
+    padding-left: 0;
+    margin: 10px 0;
+    list-style: none;
+}
+
+
+ */
+
+
+ /* privacy page css start */
+
+.privacy-wrap {
+    padding: 15px 0;
+}
+.privacy-wrap p{
+    font-size: 1rem;
+    color: #000;
+    margin-bottom: 10px;
+}
+.privacy-wrap p a{
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+}
+.privacy-wrap ul li{
+    padding: 2px 0;
+    font-size: 1rem ;
+    color: #000;
+}
+.privacy-wrap ul li a{
+    text-decoration: underline;
+    color: #000;
+    font-weight: 500;
+}
+.privacy-wrap h4 {
+    font-size: 1.375rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #000;
+}
+.privacy-wrap ul{
+    list-style: disc;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+ /* privacy page css end */
