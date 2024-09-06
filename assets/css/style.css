@@ -66,6 +66,19 @@ img {
     font-size: 1rem;
     color: #fff;
     font-weight: 500;
+    position: relative;
+}
+.main-nav ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    width: 0%;
+    height: 1px;
+    background-color: #fff;
+    transition: all 0.3s linear;
+}
+.main-nav ul li a:hover::before, .main-nav ul li a.active::before{
+    width: 100%;
 }
 .main-nav ul {
     display: flex;
@@ -79,7 +92,7 @@ nav {
 }
 .main-nav {
     position: fixed;
-    background-color: #000;
+    background-color: #1c1c1c;
     width: 30%;
     right: 0;
     top: 0;
@@ -184,6 +197,11 @@ overflow: hidden;
     width: 100%;
     background-color: #000;
     opacity: 0.3;
+    transition: all 0.3s linear;
+
+}
+.link-box a:hover::before{
+    opacity: 0.5;
 }
 .link-box h3{
     position: relative;
@@ -232,16 +250,26 @@ overflow: hidden;
 }
 .pick-img {
     height: 350px;
+    overflow: hidden;
+}
+.pick-img:hover img{
+    transform: scale(1.1);
+
 }
 .pick-wrap{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.3s linear;
+
 }
+
 .pick-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: 0.3s linear;
+
 }
 .pick-text h4 {
     font-size: 1.5625rem;
@@ -251,6 +279,10 @@ overflow: hidden;
 }
 .pick-text h4 a{
     color: #fff;
+    
+}
+.pick-text h4 a:hover {
+    text-decoration: underline;
 }
 .pick-text p {
     font-size: 1rem;
@@ -459,7 +491,7 @@ button.accordion-button, .accordion-button:not(.collapsed) {
 .footer-links ul li a::before{
     content: '';
     position: absolute;
-    bottom: -3px;
+    bottom: -8px;
     left: 0;
     width: 0%;
     height: 1px;
@@ -512,10 +544,16 @@ button.accordion-button, .accordion-button:not(.collapsed) {
     height: 100%;
     overflow: hidden;
 }
+.luxury-img:hover img{
+    transform: scale(1.1);
+
+}
 .luxury-img img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.3s linear;
+
 }
 .luxury-text h3 {
     font-size: 1.75rem;

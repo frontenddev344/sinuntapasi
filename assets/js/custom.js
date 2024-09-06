@@ -22,9 +22,14 @@ $(document).ready(function(){
     var $moreText = $this.closest('.luxury-text').find('.moretext');
   
     $moreText.slideToggle();
-    if ($this.text() == "Read Less") {
-      $this.text("Read More");
+    if ($this.text() == "Lue Vähemmän") {
+      $this.text("Lue lisää");
     } else {
-      $this.text("Read Less");
+      $this.text("Lue Vähemmän");
     }
   });
+
+  AOS.init({
+    duration: 1200,
+  })
+  
