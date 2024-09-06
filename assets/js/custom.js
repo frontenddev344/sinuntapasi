@@ -7,14 +7,18 @@ $(document).ready(function(){
     });
 });
 
-// $('.moreless-button').click(function() {
-//     $('.moretext').slideToggle();
-//     if ($('.moreless-button').text() == "Read Less") {
-//       $(this).text("Read More")
-//     } else {
-//       $(this).text("Read Less")
-//     }
-//   });
+const header = document.querySelector(".site-header");
+const toggleClass = "header-sticky";
+
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
+  if (currentScroll > 150) {
+    header.classList.add(toggleClass);
+  } else {
+    header.classList.remove(toggleClass);
+  }
+});
+
 
 
   $('.moreless-button').click(function() {

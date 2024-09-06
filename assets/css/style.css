@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 html{
     font-size: 16px;
+    scroll-behavior: smooth;
 }
 * {
     margin: 0;
@@ -53,11 +54,33 @@ img {
 .ptb-30 {
     padding: 30px 0
 }
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #407d89; 
+}
 /* header section css start */
 .site-header{
     background-color: #407d89;
     padding: 15px 0;
+}
+.header-sticky{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 .site-logo img {
     max-width: 250px;
