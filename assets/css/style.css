@@ -856,7 +856,7 @@ font-weight: 500;
     margin-bottom: 15px;
   }
   .info p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     color: #333;
   }
@@ -889,7 +889,7 @@ font-weight: 500;
 
  /* contact section css start */
 .contact-wrap p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #000;
     margin-bottom: 10px;
 }
@@ -899,14 +899,14 @@ font-weight: 500;
     font-weight: 500;
 }
 .contact-wrap h4 {
-    font-size: 22px;
+    font-size: 1.375rem;
     color: #000;
     font-weight: 600;
     margin-bottom: 5px;
 }
 .form-group label {
     display: block;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #333;
     margin-bottom: 8px;
 }
@@ -914,9 +914,9 @@ font-weight: 500;
     width: 100%;
     height: 45px;
     padding: 0 20px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .form-group {
     margin-bottom: 20px;
@@ -930,7 +930,7 @@ font-weight: 500;
     border-radius: 5px;
     border: 1px solid #407d89;
     background: #407d89;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: #fff;
 }
@@ -958,11 +958,29 @@ font-weight: 500;
     gap: 10px;
     margin: 10px 0;
 }
-/* .contact-main{
+.contact-right{
     background-image: url(../images/contact-bg.jpg);
     background-position: center;
-    background-blend-mode: color-burn;
+    background-blend-mode: multiply;
     background-repeat: no-repeat;
     background-size: cover;
-} */
+    background-color: #20616e;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.contact-left {
+    box-shadow: rgb(64 125 137 / 33%) 0px 7px 29px 0px;
+    padding: 30px 30px;
+height: 100%;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
+}
+.contact-right .contact-wrap h4, .contact-right .contact-wrap p, .contact-right .form-group label {
+    color: #ffffff;
+}
+.contact-main .row.first-rw {
+    --bs-gutter-x: 0;
+}
  /* contact section css end */
