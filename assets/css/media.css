@@ -44,6 +44,18 @@
     .sub-banner {
         height: 400px !important;
     }
+    .contact-main .row.first-rw {
+       flex-direction: column;
+    }
+    .contact-main .row.first-rw .col-md-5, .contact-main .row.first-rw .col-md-7{
+        width: 100%;
+    }
+    .contact-main .row.first-rw .col-md-5 {
+        margin-bottom: 30px;
+    }
+    .contact-left, .contact-right {
+        border-radius: 10px;
+    }
 }
 
 @media(max-width:767px){
@@ -138,5 +150,15 @@
     }
     .wrapper {
         max-width: 90%;
+    }
+    .form-group {
+        margin-bottom: 12px;
+    }
+    .form-group textarea {
+        height: 200px;
+        padding-top: 12px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+        padding: 0 12px;
     }
 }
