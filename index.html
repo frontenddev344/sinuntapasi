@@ -604,6 +604,32 @@ hotellit
       </div>
     <!-- footer section end -->
 
+
+      <!-- cookies popup start -->
+      <div class="cookies-sec">
+         <div class="container">
+          <div class="wrapper">
+           
+            <div class="info">
+              <p>
+                Tämä verkkosivusto käyttää evästeitä varmistaakseen, että saat parhaan kokemuksen
+                verkkosivustollamme. Evästeet auttavat meitä tarjoamaan sosiaalisen median
+                ominaisuuksia, analysoimaan liikennettämme ja parantamaan palveluitamme. Jatkamalla
+                sivustomme selaamista hyväksyt evästeiden käytön.
+              </p>
+            </div>
+            <div class="buttons">
+              <button class="button" id="acceptBtn">Hyväksy</button>
+              <button class="button">hylkää</button>
+            </div>
+          </div>
+         </div>
+      </div>
+
+
+      <!-- cookies popup end  -->
+
+
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script  src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
@@ -647,6 +673,33 @@ hotellit
     }
   ]
 });
+    </script>
+    <script>
+      // ---- ---- Const ---- ---- //
+const cookiesBox = document.querySelector('.wrapper'),
+  buttons = document.querySelectorAll('.button');
+
+// ---- ---- Show ---- ---- //
+const executeCodes = () => {
+  if (document.cookie.includes('AlexGolovanov')) return;
+  cookiesBox.classList.add('show');
+
+  // ---- ---- Button ---- ---- //
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      cookiesBox.classList.remove('show');
+
+      // ---- ---- Time ---- ---- //
+      if (button.id == 'acceptBtn') {
+        document.cookie =
+          'cookieBy= AlexGolovanov; max-age=' + 60 * 60 * 24 * 30;
+      }
+    });
+  });
+};
+
+window.addEventListener('load', executeCodes);
+
     </script>
   </body>
 </html>

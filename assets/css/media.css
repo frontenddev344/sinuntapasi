@@ -136,4 +136,7 @@
     .sub-banner {
         height: 380px !important;
     }
+    .wrapper {
+        max-width: 90%;
+    }
 }
