@@ -22,7 +22,7 @@ ul {
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 img {
@@ -694,9 +694,8 @@ p.moretext {
 .button-82-front {
   display: block;
   position: relative;
-  padding: 10px 27px;
+  padding: 10px 20px;
   border-radius: 12px;
-  font-size: 1.1rem;
   color: white;
   background: hsl(189.86deg 36.32% 39.41%);
   will-change: transform;
@@ -705,14 +704,14 @@ p.moretext {
     transform
     600ms
     cubic-bezier(.3, .7, .4, 1);
-    font-size: 1rem;
+    font-size: 0.875rem;
 
 }
 
 @media (min-width: 768px) {
   .button-82-front {
-    font-size: 1rem;
-    padding: 10px 42px;
+    font-size: 0.875rem;
+    padding: 10px 20px;
   }
 }
 
@@ -984,3 +983,6 @@ border-bottom-left-radius: 10px;
     --bs-gutter-x: 0;
 }
  /* contact section css end */
+ .top-pick {
+    overflow: hidden;
+}
