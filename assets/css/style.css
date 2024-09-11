@@ -422,6 +422,9 @@ overflow: hidden;
 .news-letter, .disclaimer-sec, .link-sec {
     background-color: #f7f9ff;
 }
+.disclaimer-sec {
+    text-align: center;
+}
 
 /* newsletter section css end */
 
@@ -984,5 +987,12 @@ border-bottom-left-radius: 10px;
 }
  /* contact section css end */
  .top-pick {
+    overflow: hidden;
+}
+
+.site-header{
+    overflow: hidden;
+}
+.luxury-main{
     overflow: hidden;
 }
