@@ -996,3 +996,6 @@ border-bottom-left-radius: 10px;
 .luxury-main{
     overflow: hidden;
 }
+.luxury-wrap {
+    overflow: hidden;
+}
